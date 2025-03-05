@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator {
-    private List<Integer> results; // 연산 결과 저장 (컬렉션)
+    private List<Integer> results; // 컬렉션
 
     public Calculator() {
         results = new ArrayList<>();
@@ -38,12 +38,12 @@ public class Calculator {
         return result;
     }
 
-    // 연산 결과 리스트를 반환 (Getter)
+    // Getter
     public List<Integer> getResults() {
-        return new ArrayList<>(results); // 캡슐화 유지 (외부에서 직접 수정 방지)
+        return new ArrayList<>(results); // 캡슐화
     }
 
-    // 가장 먼저 저장된 연산 결과 삭제 (FIFO 방식)
+    // 가장 먼저 저장된 연산 결과 삭제
     public void removeFirstResult() {
         if (!results.isEmpty()) {
             results.remove(0);
