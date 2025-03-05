@@ -1,4 +1,5 @@
 package org.example.lv2;
+
 import java.util.Scanner;
 import org.example.lv1.Calculator;
 

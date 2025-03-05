@@ -43,7 +43,7 @@ public class Calculator {
         return new ArrayList<>(results); // 캡슐화
     }
 
-    // 가장 먼저 저장된 연산 결과 삭제
+    // 가장 오래된 연산 결과 삭제
     public void removeFirstResult() {
         if (!results.isEmpty()) {
             results.remove(0);
